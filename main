@@ -1,0 +1,23 @@
+
+var n：int；
+var a[][]:int;
+function initialize(var n：int):void
+{
+    var m:int;
+    m=2*n-1;
+    for(var k:int;k<n;k++)
+    {
+        for(var l:int;l<m;l++)
+            a[k][l]=0;
+    }
+}
+
+function set():void
+{
+    var m:int;
+    m=2*n-1;
+    for(var k:int;k<n;k++)
+    {
+        
+    }
+}
