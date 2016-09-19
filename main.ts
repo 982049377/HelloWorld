@@ -12,7 +12,7 @@ nn=3;
 m=2*nn-1;
 initialize()
 set();
-output();
+//output();
 
 function initialize():void
 {
@@ -20,11 +20,13 @@ function initialize():void
     for(k=0;k<m;k++)
     Arraya.push(" ");
     for(l=0;l<nn;l++)
-    newArray.push(Arraya);
-     for(k=0;k<nn;k++)
+    {
+         newArray.push(Arraya);
+    }
+    /* for(k=0;k<nn;k++)
     {
         console.log(newArray[k]);
-    }
+    }*/
 }
 
 function set():void
@@ -38,12 +40,12 @@ function set():void
         for(l=0;l<=k;l++)
         {
             newArray[k][(m-1)/2-l]="*";
-           
             newArray[k][(m-1)/2+l]="*";
-            console.log(k);
-            console.log(newArray[k]);
-            console.log();
+           // console.log(k);
+           // console.log(newArray[k]);
+           // console.log();
         }
+        console.log(newArray[k]);
     }
             
 }
@@ -52,7 +54,7 @@ function output():void
 {
      for(k=0;k<nn;k++)
     {
-          console.log(k);
+        //  console.log(k);
             console.log(newArray[k]);
     }
  //   console.log();
