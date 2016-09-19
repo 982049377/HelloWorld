@@ -1,6 +1,5 @@
 // TypeScript file
 var nn;
-//var newArray=new Array(new Array(),new Array())
 var newArray;
 var Arraya;
 var k;
@@ -21,14 +20,8 @@ function initialize() {
             Arraya.push(" ");
         newArray.push(Arraya);
     }
-    /* for(k=0;k<nn;k++)
-    {
-        console.log(newArray[k]);
-    }*/
 }
 function set() {
-    //var k:number;
-    //var l:number
     for (k = 0; k < nn; k++) {
         newArray[k][(m - 1) / 2] = "*";
         for (l = 0; l <= k; l++) {
@@ -39,9 +32,6 @@ function set() {
 }
 function output() {
     for (k = 0; k < nn; k++) {
-        //  console.log(k);
         console.log(newArray[k]);
     }
-    //   console.log();
-    // console.log(newArray[1]);
 }

@@ -1,4 +1,5 @@
 // TypeScript file
+
 var nn:number;
 var  Arraya:string[];
 var k:number;

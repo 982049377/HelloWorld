@@ -12,10 +12,6 @@ set();
 function initialize() {
     for (k = 0; k < m; k++)
         Arraya.push(" ");
-    for (l = 0; l < nn; l++) {
-        console.log(Arraya);
-        console.log();
-    }
 }
 function set() {
     for (k = 0; k < nn; k++) {

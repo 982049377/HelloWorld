@@ -1,4 +1,5 @@
 // TypeScript file
+
 var nn:number;
 var  newArray:string[][];
 var  Arraya:string[];
