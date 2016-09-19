@@ -1,23 +1,49 @@
 
-var n：int；
-var a[][]:int;
-function initialize(var n：int):void
+var n：number；
+var a[][]:number;
+n=5;
+initialize(n);
+set();
+output();
+
+function initialize(var n：number):void
 {
-    var m:int;
+    var m:number;
     m=2*n-1;
-    for(var k:int;k<n;k++)
+    for(var k:number;k<n;k++)
     {
-        for(var l:int;l<m;l++)
+        for(var l:number;l<m;l++)
             a[k][l]=0;
     }
 }
 
 function set():void
 {
-    var m:int;
+    var m:number;
     m=2*n-1;
-    for(var k:int;k<n;k++)
+    var k:number;
+    var l:number
+    for(k=0;k<n;k++)
     {
-        
+        for(l=0;l<k;l++)
+        {
+            a[k][(2n-2)/2]=1;
+            a[k][(2n-2)/2-l]=1;
+            a[k][(2n-2)/2+l]=1;
+        }
+    }
+}
+
+function output():void
+{
+     for(var k:number;k<n;k++)
+    {
+        for(var l:number;l<m;l++)
+        {
+            if(a[k][l]==1)
+                console.log("*");
+            else
+                console.log("");
+        }
     }
 }
