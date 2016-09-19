@@ -1,6 +1,9 @@
 # HelloWorld
 ##王恒尊
 ##14081202
+<br>爱好</br>：看小说 听音乐  玩游戏
+<br>目标</br>：第一目标想游戏方向努力，第二目标移动客户端努力
+<br>爱好</br>现状：都所有已学过的程序语言都是了解一些，泛而不精，想选择着重学习一门语言，要不太乱了
 <img src="http://game.china.com/data/pic/2011-04-19/b38808be-67a6-4bf0-8df1-4e71cdf1184b.jpg" width="100%" height="100%" />
 <meta name="keywords" value="简历">
 <meta name="description" value="我的个人简历">
