@@ -12,12 +12,13 @@ nn = 3;
 m = 2 * nn - 1;
 initialize();
 set();
-//output();
+output();
 function initialize() {
     newArray.pop();
-    for (k = 0; k < m; k++)
-        Arraya.push(" ");
     for (l = 0; l < nn; l++) {
+        var Arraya = [];
+        for (k = 0; k < m; k++)
+            Arraya.push(" ");
         newArray.push(Arraya);
     }
     /* for(k=0;k<nn;k++)
@@ -34,7 +35,6 @@ function set() {
             newArray[k][(m - 1) / 2 - l] = "*";
             newArray[k][(m - 1) / 2 + l] = "*";
         }
-        console.log(newArray[k]);
     }
 }
 function output() {
