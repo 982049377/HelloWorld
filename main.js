@@ -19,24 +19,27 @@ function initialize() {
         Arraya.push(" ");
     for (l = 0; l < nn; l++)
         newArray.push(Arraya);
-    /* for(k=0;k<nn;k++)
-    {
+    for (k = 0; k < nn; k++) {
         console.log(newArray[k]);
-    }*/
+    }
 }
 function set() {
     //var k:number;
     //var l:number
     for (k = 0; k < nn; k++) {
-        for (l = 0; l < k; l++) {
-            newArray[k][(m - 1) / 2] = "*";
+        newArray[k][(m - 1) / 2] = "*";
+        for (l = 0; l <= k; l++) {
             newArray[k][(m - 1) / 2 - l] = "*";
             newArray[k][(m - 1) / 2 + l] = "*";
+            console.log(k);
+            console.log(newArray[k]);
+            console.log();
         }
     }
 }
 function output() {
     for (k = 0; k < nn; k++) {
+        console.log(k);
         console.log(newArray[k]);
     }
     //   console.log();
