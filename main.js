@@ -8,35 +8,37 @@ var l;
 var m;
 Arraya = [];
 newArray = [[]];
-nn = 5;
+nn = 3;
 m = 2 * nn - 1;
 initialize();
 set();
 output();
 function initialize() {
-    for (k = 0; k <= nn; k++)
-        Arraya.push(2);
-    for (l = 0; l <= m; l++)
+    newArray.pop();
+    for (k = 0; k < m; k++)
+        Arraya.push(" ");
+    for (l = 0; l < nn; l++)
         newArray.push(Arraya);
+    /* for(k=0;k<nn;k++)
+    {
+        console.log(newArray[k]);
+    }*/
 }
 function set() {
     //var k:number;
     //var l:number
-    for (k = 0; k <= nn; k++) {
-        for (l = 0; l <= k; l++) {
-            newArray[k][(2 * nn - 2) / 2] = 1;
-            newArray[k][(2 * nn - 2) / 2 - l] = 1;
-            newArray[k][(2 * nn - 2) / 2 + l] = 1;
+    for (k = 0; k < nn; k++) {
+        for (l = 0; l < k; l++) {
+            newArray[k][(m - 1) / 2] = "*";
+            newArray[k][(m - 1) / 2 - l] = "*";
+            newArray[k][(m - 1) / 2 + l] = "*";
         }
     }
 }
 function output() {
-    for (k = 0; k <= nn; k++) {
-        for (l = 0; l <= m; l++) {
-            if (newArray[k][l] == 1)
-                console.log("*");
-            else
-                console.log("");
-        }
+    for (k = 0; k < nn; k++) {
+        console.log(newArray[k]);
     }
+    //   console.log();
+    // console.log(newArray[1]);
 }
