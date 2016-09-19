@@ -1,10 +1,13 @@
 // TypeScript file
 var nn:number;
 //var newArray=new Array(new Array(),new Array())
-let newArray:number[][];
+var  newArray:number[][];
+var  Arraya:number[];
 var k:number;
 var l:number;
 var m:number;
+Arraya=[];
+newArray=[[]];
 nn=5;
 m=2*nn-1;
 initialize()
@@ -13,13 +16,10 @@ output();
 
 function initialize():void
 {
-    //var m:number;
-    //m=2*n-1;
-    for(k=0;k<nn;k++)
-    {
-        for(l=0;l<m;l++)
-           newArray[k][l]=0;
-    }
+    for(k=0;k<=nn;k++)
+    Arraya.push(2);
+    for(l=0;l<=m;l++)
+    newArray.push(Arraya);
 }
 
 function set():void
@@ -27,9 +27,9 @@ function set():void
   
     //var k:number;
     //var l:number
-    for(k=0;k<nn;k++)
+    for(k=0;k<=nn;k++)
     {
-        for(l=0;l<k;l++)
+        for(l=0;l<=k;l++)
         {
             newArray[k][(2*nn-2)/2]=1;
             newArray[k][(2*nn-2)/2-l]=1;
@@ -40,9 +40,9 @@ function set():void
 
 function output():void
 {
-     for(var k:number;k<nn;k++)
+     for(k=0;k<=nn;k++)
     {
-        for(var l:number;l<m;l++)
+        for(l=0;l<=m;l++)
         {
             if(newArray[k][l]==1)
                 console.log("*");
