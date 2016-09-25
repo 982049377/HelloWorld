@@ -1,40 +1,38 @@
 // TypeScript file
 
-var nn:number;
-var  newArray:string[][];
-var  Arraya:string[];
-var k:number;
-var l:number;
-var m:number;
-Arraya=[];
-newArray=[[]];
-nn=3;
-m=2*nn-1;
+var Row:number;//行数
+var StarArray:string[][];//星星存储矩阵
+var TempColomn:number;//临时列数
+var TempRow:number;//临时行数
+var Colomn:number;//行数
+StarArray=[[]];
+Row=5;
+Colomn=2*Row-1;
 initialize()
 set();
 output();
 
 function initialize():void
 {
-    newArray.pop();
-    for(l=0;l<nn;l++)
+    StarArray.pop();
+    for(TempRow=0;TempRow<Row;TempRow++)
     {
-        var Arraya=[];
-        for(k=0;k<m;k++)
-            Arraya.push(" "); 
-        newArray.push(Arraya);
+        var TempArray=[];
+        for(TempColomn=0;TempColomn<Colomn;TempColomn++)
+            TempArray.push(" "); 
+        StarArray.push(TempArray);
     }
 }
 
 function set():void
 {
-    for(k=0;k<nn;k++)
+    for(TempColomn=0;TempColomn<Row;TempColomn++)
     {  
-        newArray[k][(m-1)/2]="*";
-        for(l=0;l<=k;l++)
+        StarArray[TempColomn][(Colomn-1)/2]="*";
+        for(TempRow=0;TempRow<=TempColomn;TempRow++)
         {
-            newArray[k][(m-1)/2-l]="*";
-            newArray[k][(m-1)/2+l]="*";
+            StarArray[TempColomn][(Colomn-1)/2-TempRow]="*";
+            StarArray[TempColomn][(Colomn-1)/2+TempRow]="*";
         }
     }
             
@@ -42,8 +40,8 @@ function set():void
 
 function output():void
 {
-     for(k=0;k<nn;k++)
+     for(TempColomn=0;TempColomn<Row;TempColomn++)
     {
-            console.log(newArray[k]);
+            console.log(StarArray[TempColomn]);
     }
 }
